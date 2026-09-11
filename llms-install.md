@@ -20,7 +20,7 @@ Cline: `cline_mcp_settings.json`.
   "mcpServers": {
     "wb": {
       "command": "uvx",
-      "args": ["wildberries-mcp-ru"],
+      "args": ["--from", "git+https://github.com/ilyautov/wildberries-mcp-ru", "wildberries-mcp-ru"],
       "env": {
         "WB_API_TOKEN": "<значение>"
       },
