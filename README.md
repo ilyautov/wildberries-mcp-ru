@@ -42,11 +42,17 @@ Claude Desktop, `claude_desktop_config.json`:
   "mcpServers": {
     "wb": {
       "command": "uvx",
-      "args": ["wildberries-mcp-ru"],
+      "args": ["--from", "git+https://github.com/ilyautov/wildberries-mcp-ru", "wildberries-mcp-ru"],
       "env": { "WB_API_TOKEN": "..." }
     }
   }
 }
+```
+
+Третий путь, если агент умеет скиллы: он поставит сервер и настроит клиент сам.
+
+```bash
+npx skills add ilyautov/wildberries-mcp-ru
 ```
 
 ## Ключи
