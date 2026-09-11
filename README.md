@@ -23,6 +23,14 @@ API Wildberries для ИИ-ассистентов: продажи и остат
 
 ## Установка
 
+Первый релиз на PyPI выпускается тегом `v0.5.3`, до этого пакет ставится прямо из репозитория:
+
+```bash
+uvx --from git+https://github.com/ilyautov/wildberries-mcp-ru wildberries-mcp-ru
+```
+
+После релиза строка короче:
+
 ```bash
 uvx wildberries-mcp-ru
 ```
