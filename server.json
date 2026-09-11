@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ilyautov/wildberries-mcp-ru",
+  "title": "Wildberries MCP (RU)",
+  "description": "API Wildberries в ИИ-ассистенте: продажи, остатки, карточки, цены, отчёты",
+  "version": "0.5.3",
+  "repository": {
+    "url": "https://github.com/ilyautov/wildberries-mcp-ru",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "wildberries-mcp-ru",
+      "version": "0.5.3",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "WB_API_TOKEN",
+          "description": "Токен из кабинета seller.wildberries.ru, Настройки → Доступ к API. Уходит в Authorization без Bearer.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

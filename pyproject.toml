@@ -1,0 +1,34 @@
+[project]
+name = "wildberries-mcp-ru"
+version = "0.5.3"
+description = "API Wildberries для ИИ-ассистентов: продажи и остатки, карточки и характеристики, цены и акции, финансовые отчёты, отзывы"
+keywords = ["mcp", "model-context-protocol", "wildberries", "wildberries-api", "wb", "вайлдберриз", "seller-api", "marketplace", "ecommerce", "russia", "claude"]
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Ilya Utov" }]
+dependencies = [
+    # Весь код приходит отсюда. Версия фиксируется снизу и держится в пределах
+    # мажорной: обёртка обязана ставить то ядро, про которое написан README.
+    "marketplaces-mcp-ru>=0.5.3,<1",
+]
+
+[project.urls]
+Homepage = "https://marketplaces-mcp-ru.aifrontier.tech/wildberries-api.html"
+Documentation = "https://marketplaces-mcp-ru.aifrontier.tech/wildberries-api.html"
+Repository = "https://github.com/ilyautov/wildberries-mcp-ru"
+Issues = "https://github.com/ilyautov/wildberries-mcp-ru/issues"
+Changelog = "https://github.com/ilyautov/wildberries-mcp-ru/blob/main/CHANGELOG.md"
+
+[project.scripts]
+wildberries-mcp-ru = "wildberries_mcp_ru:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-asyncio>=0.23"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["wildberries_mcp_ru"]
