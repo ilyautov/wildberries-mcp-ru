@@ -12,16 +12,16 @@ description: "Подключить Wildberries к ИИ-ассистенту и �
 
 ## Установка
 
-Первый релиз на PyPI выпускается тегом `v0.5.3`, до этого пакет ставится прямо из репозитория:
-
-```bash
-uvx --from git+https://github.com/ilyautov/wildberries-mcp-ru wildberries-mcp-ru
-```
-
-После релиза строка короче:
+Пакет на PyPI, поэтому строка одна:
 
 ```bash
 uvx wildberries-mcp-ru
+```
+
+Если нужна ветка `main`, а не релиз:
+
+```bash
+uvx --from git+https://github.com/ilyautov/wildberries-mcp-ru wildberries-mcp-ru
 ```
 
 Конфигурация клиента (Claude Desktop, Cursor, Claude Code):
@@ -31,7 +31,7 @@ uvx wildberries-mcp-ru
   "mcpServers": {
     "wb": {
       "command": "uvx",
-      "args": ["--from", "git+https://github.com/ilyautov/wildberries-mcp-ru", "wildberries-mcp-ru"],
+      "args": ["wildberries-mcp-ru"],
       "env": {
         "WB_API_TOKEN": "<значение>"
       }
