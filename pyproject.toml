@@ -1,6 +1,6 @@
 [project]
 name = "wildberries-mcp-ru"
-version = "0.5.3"
+version = "0.5.4"
 description = "API Wildberries для ИИ-ассистентов: продажи и остатки, карточки и характеристики, цены и акции, финансовые отчёты, отзывы"
 keywords = ["mcp", "model-context-protocol", "wildberries", "wildberries-api", "wb", "вайлдберриз", "seller-api", "marketplace", "ecommerce", "russia", "claude"]
 readme = "README.md"
